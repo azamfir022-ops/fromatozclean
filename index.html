@@ -3,120 +3,148 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>From A to Z Clean | Professional Cleaning Services London</title>
+
+<title>From A to Z Clean | After Builders Cleaning London</title>
+<meta name="description" content="Professional After Builders & Construction Cleaning in London. Reliable subcontract teams. Fast response. Call 07552507619.">
+
+<!-- SEO -->
+<meta name="keywords" content="After Builders Cleaning London, Construction Cleaning London, Site Cleaning London, Commercial Cleaning London">
+
+<!-- Open Graph -->
+<meta property="og:title" content="From A to Z Clean | Professional Cleaning London">
+<meta property="og:description" content="Reliable after builders cleaning services across London.">
+<meta property="og:type" content="website">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f6f8;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #222;
 }
 
 header {
+    background: #0f172a;
+    color: white;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1581579185169-1f6a2f9cfa7c');
+    background-size: cover;
+    background-position: center;
+    color: white;
     text-align: center;
-    padding: 80px 20px;
-    background: white;
-    animation: fadeIn 1.2s ease-in-out;
+    padding: 120px 10%;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
 }
 
-.logo {
-    width: 220px;
-    max-width: 80%;
-    margin-bottom: 25px;
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 
-h1 {
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.section {
+    padding: 80px 10%;
+}
+
+.section h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.services {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 280px;
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.card h4 {
     margin-bottom: 15px;
 }
 
-p {
-    font-size: 18px;
-}
-
-.button {
-    background-color: #0B3C5D;
+.why {
+    background: #0f172a;
     color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
 }
 
-.button:hover {
-    background-color: #06293f;
-    transform: scale(1.05);
-}
-
-section {
+.contact {
     text-align: center;
-    padding: 70px 20px;
 }
 
-.services p {
-    margin: 8px 0;
-    font-size: 17px;
-}
-
-.social-buttons {
-    margin-top: 30px;
-}
-
-.social-buttons a {
+.contact a {
     display: inline-block;
-    margin: 8px;
-    padding: 12px 20px;
-    border-radius: 5px;
+    margin: 10px;
+    font-size: 18px;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
+    color: #0f172a;
+    font-weight: 600;
 }
 
-.whatsapp { background-color: #25D366; }
-.instagram { background-color: #E1306C; }
-.facebook { background-color: #1877F2; }
-
-.social-buttons a:hover {
-    transform: scale(1.1);
-    opacity: 0.9;
-}
-
-footer {
-    text-align: center;
-    padding: 25px;
-    background: #0B3C5D;
-    color: white;
-}
-
-/* Floating WhatsApp */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #25D366;
+    background: #25D366;
     color: white;
-    font-size: 28px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 60px;
+    padding: 14px 18px;
+    border-radius: 50px;
     text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: 0.3s;
-    z-index: 1000;
+    font-weight: 600;
 }
 
-.whatsapp-float:hover {
-    transform: scale(1.1);
-    background-color: #1ebe5d;
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
 }
 </style>
 </head>
@@ -124,61 +152,59 @@ footer {
 <body>
 
 <header>
-
-<img src="logo.png" alt="From A to Z Clean Logo" class="logo">
-
 <h1>From A to Z Clean</h1>
-
-<p>
-Professional Residential & Commercial Cleaning Services Across London
-</p>
-
-<br>
-
-<a href="https://wa.me/447552507619?text=Hello%20I%20would%20like%20a%20cleaning%20quote" target="_blank">
-<button class="button">Get a Free Quote</button>
-</a>
-<div class="social-buttons">
-<a href="https://wa.me/447552507619" target="_blank" class="whatsapp">WhatsApp</a>
-<a href="#" class="instagram">Instagram</a>
-<a href="#" class="facebook">Facebook</a>
-</div>
-
-
+<nav>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
+<section class="hero">
+<h2>Professional After Builders Cleaning in London</h2>
+<p>Reliable subcontract teams. Fast turnaround. Site-ready standards.</p>
+<a href="https://wa.me/447552507619?text=Hello%20From%20A%20to%20Z%20Clean,%20I%20need%20a%20quote%20for%20after%20builders%20cleaning%20in%20London." class="btn">Get Quote on WhatsApp</a>
+</section>
 
-<section>
-<h2>About Us</h2>
-<p style="max-width:700px; margin:0 auto;">
-From A to Z Clean is a professional cleaning company based in London.
-We provide high-quality domestic and commercial cleaning services,
-delivering reliable, efficient and detailed results every time.
+<section class="section" id="services">
+<h3>Our Services</h3>
+<div class="services">
+<div class="card">
+<h4>After Builders Cleaning</h4>
+<p>Full deep clean after construction work. Dust removal, windows, kitchens, bathrooms, final sparkle clean.</p>
+</div>
+
+<div class="card">
+<h4>End of Tenancy Cleaning</h4>
+<p>Professional cleaning for landlords, tenants and letting agents across London.</p>
+</div>
+</div>
+</section>
+
+<section class="section why">
+<h3>Why Choose Us</h3>
+<p style="text-align:center; max-width:700px; margin:auto;">
+✔ Construction site experienced<br>
+✔ Flexible subcontract teams<br>
+✔ Fast response across London<br>
+✔ Reliable & detail-focused<br>
+✔ Competitive pricing
 </p>
 </section>
 
-
-<section class="services">
-<h2>Our Services</h2>
-<p>✔ Domestic Cleaning</p>
-<p>✔ Commercial & Office Cleaning</p>
-<p>✔ End of Tenancy Cleaning</p>
-<p>✔ After Builders Cleaning</p>
-<p>✔ Deep Cleaning Services</p>
+<section class="section contact" id="contact">
+<h3>Contact Us</h3>
+<p>London, United Kingdom</p>
+<a href="tel:07552507619">📞 07552 507 619</a><br>
+<a href="mailto:zandrei61@yahoo.com">✉ zandrei61@yahoo.com</a>
 </section>
 
+<a class="whatsapp-float" href="https://wa.me/447552507619?text=Hello%20From%20A%20to%20Z%20Clean,%20I%20would%20like%20a%20cleaning%20quote." target="_blank">
+WhatsApp
+</a>
 
 <footer>
-© 2026 From A to Z Clean | London | Tel: 07552 507 619
+© 2026 From A to Z Clean | London
 </footer>
-
-
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/447552507619?text=Hello%20I%20would%20like%20a%20cleaning%20quote"
-   class="whatsapp-float"
-   target="_blank">
-💬
-</a>
 
 </body>
 </html>
